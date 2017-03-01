@@ -9,8 +9,6 @@ class CrowConanFile(ConanFile):
     url = 'https://github.com/javierjeronimo/crow'
     license = 'https://github.com/ipkn/crow/blob/master/LICENSE'
     generators = 'cmake'
-    settings = 'os', 'compiler', 'build_type', 'arch'
-
     requires = 'Boost/1.60.0@lasote/stable', 'OpenSSL/1.0.2j@lasote/stable'
 
     def source(self):
